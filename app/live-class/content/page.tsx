@@ -89,7 +89,7 @@ export default function LiveClassContent() {
       setSelectedActivity(engagementActivities[randomIndex])
       setShowDialog(true)
       setTimeline(prev => [...prev, {time: elapsedTime, activity: engagementActivities[randomIndex].title}])
-    }, 5000)
+    }, 10000)
 
     const timeInterval = setInterval(() => {
       setElapsedTime(prev => (prev + 1) % classDuration)

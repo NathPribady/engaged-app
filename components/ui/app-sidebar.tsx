@@ -1,4 +1,4 @@
-import { Video, Home, Book, Search, Settings } from "lucide-react"
+import { Video, Home, Book } from "lucide-react"
 
 import {
   Sidebar,

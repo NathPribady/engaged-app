@@ -21,7 +21,7 @@ export default function Dashboard() {
   const [subject, setSubject] = useState('')
   const [gradeLevel, setGradeLevel] = useState('')
   const [learningMethod, setLearningMethod] = useState('')
-  const [generatedMaterial, setGeneratedMaterial] = useState<any | null>(null)
+  const [generatedMaterial, setGeneratedMaterial] = useState<any | null>(null) // eslint-disable-line @typescript-eslint/no-explicit-any
   const [selectedAnswers, setSelectedAnswers] = useState<{ [key: string]: string }>({})
 
   const handleFileUpload = (event: React.ChangeEvent<HTMLInputElement>) => {
@@ -43,25 +43,25 @@ export default function Dashboard() {
           title: "Addition",
           content: "Addition is the process of combining two or more numbers. We use the '+' symbol for addition.",
           example: "5 + 3 = 8",
-          image: "https://as1.ftcdn.net/v2/jpg/01/20/65/24/1000_F_120652460_7uPT2p82zWUDTkdB1PFYfWNeawRg4jJ1.jpg"
+          image: "/placeholder.svg?height=200&width=200"
         },
         {
           title: "Subtraction",
           content: "Subtraction is the process of taking one number away from another. We use the '-' symbol for subtraction.",
           example: "10 - 4 = 6",
-          image: "https://www.shutterstock.com/shutterstock/photos/2020019123/display_1500/stock-vector-educational-math-children-game-subtraction-for-kids-math-worksheet-vector-illustration-2020019123.jpg"
+          image: "/placeholder.svg?height=200&width=200"
         },
         {
           title: "Multiplication",
           content: "Multiplication is repeated addition. We use the '×' symbol for multiplication.",
           example: "3 × 4 = 12 (which is the same as 4 + 4 + 4)",
-          image: "https://c8.alamy.com/comp/2J92X7G/multiplication-table-of-2-maths-card-with-an-example-drawing-multiplication-square-vector-illustration-printed-product-banner-table-for-2J92X7G.jpg"
+          image: "/placeholder.svg?height=200&width=200"
         },
         {
           title: "Division",
           content: "Division is the process of splitting a number into equal parts. We use the '÷' symbol for division.",
           example: "12 ÷ 3 = 4",
-          image: "https://cdn1.byjus.com/wp-content/uploads/2018/11/formulas/2016/04/14105342/Division-Formula.png"
+          image: "/placeholder.svg?height=200&width=200"
         }
       ],
       quiz: [
@@ -188,7 +188,7 @@ export default function Dashboard() {
           </CardHeader>
           <CardContent>
             <div className="grid gap-6">
-              {generatedMaterial.sections.map((section: any, index: number) => (
+              {generatedMaterial.sections.map((section: any, index: number) => ( // eslint-disable-line @typescript-eslint/no-explicit-any
                 <Collapsible key={index}>
                   <CollapsibleTrigger asChild>
                     <Button variant="outline" className="w-full justify-between">
@@ -215,7 +215,7 @@ export default function Dashboard() {
             <div className="w-full">
               <h3 className="text-lg font-semibold mb-4">Pop Quiz</h3>
               <div className="grid gap-4">
-                {generatedMaterial.quiz.map((quizItem: any, index: number) => (
+                {generatedMaterial.quiz.map((quizItem: any, index: number) => ( // eslint-disable-line @typescript-eslint/no-explicit-any
                   <Card key={index}>
                     <CardHeader>
                       <CardTitle className="text-base">{quizItem.question}</CardTitle>
@@ -271,8 +271,8 @@ export default function Dashboard() {
               <CollapsibleContent className="p-4">
                 <ul className="list-disc pl-4">
                   <li>Online simulation tool: www.example-simulation.com</li>
-                  <li>Supplementary reading: "Advanced Concepts in Education" by J. Smith</li>
-                  <li>Video series: "Practical Applications in the Real World" on EduTube</li>
+                  <li>Supplementary reading: Advanced Concepts in Education by J. Smith</li>
+                  <li>Video series: Practical Applications in the Real World on EduTube</li>
                 </ul>
               </CollapsibleContent>
             </Collapsible>

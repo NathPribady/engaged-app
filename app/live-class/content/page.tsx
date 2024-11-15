@@ -141,7 +141,7 @@ export default function LiveClassContent() {
           <CardHeader>
             <CardTitle>Real-time Transcript</CardTitle>
           </CardHeader>
-          <CardContent className="h-[400px] overflow-y-auto">
+          <CardContent className="h-[200px] overflow-y-auto">
             {transcript.map((line, index) => (
               <p key={index} className="mb-2">
                 <span className="font-semibold">{line.time}:</span> {line.text}
@@ -175,7 +175,7 @@ export default function LiveClassContent() {
         <CardContent>
           <div className="mb-2">Elapsed Time: {formatTime(elapsedTime)} / 02:00:00</div>
           <Progress value={(elapsedTime / classDuration) * 100} className="w-full h-4" />
-          <div className="mt-4 h-[100px] overflow-y-auto">
+          <div className="mt-4 h-[75px] overflow-y-auto">
             {timeline.map((event, index) => (
               <div key={index} className="text-sm mb-1">
                 {formatTime(event.time)}: {event.activity}

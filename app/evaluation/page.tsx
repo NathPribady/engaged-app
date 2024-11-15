@@ -8,7 +8,7 @@ export default function Evaluation() {
         <CardTitle>Evaluation</CardTitle>
       </CardHeader>
       <CardContent>
-        <p>This is the Evaluation page. Here you can manage and review student evaluations.</p>
+        <p>This is the Evaluation page. Here you can manage and review student evaluations. Yay!</p>
         <ul className="list-disc pl-5 mt-4">
           <li>Create new assessments</li>
           <li>Grade submitted work</li>

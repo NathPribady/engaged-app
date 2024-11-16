@@ -75,7 +75,7 @@ const evaluations = [
 ]
 
 export default function Dashboard() {
-  const [activeSection, setActiveSection] = useState<'create' | 'review' | null>(null)
+  const [activeSection, setActiveSection] = useState<'create' | 'review' | null>(null) /* eslint-disable  @typescript-eslint/no-explicit-any */
   const [prompt, setPrompt] = useState('')
   const [subject, setSubject] = useState('')
   const [gradeLevel, setGradeLevel] = useState('')

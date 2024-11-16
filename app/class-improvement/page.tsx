@@ -3,12 +3,11 @@
 import { useState } from 'react'
 import { Card, CardContent, CardHeader, CardTitle } from "@/components/ui/card"
 import { Button } from "@/components/ui/button"
-import { Badge } from "@/components/ui/badge"
 import { ChartContainer, ChartTooltip, ChartTooltipContent } from "@/components/ui/chart"
-import { ResponsiveContainer, LineChart, Line, XAxis, YAxis, CartesianGrid, Tooltip, Legend } from 'recharts'
+import { ResponsiveContainer, LineChart, Line, XAxis, YAxis, CartesianGrid, Legend } from 'recharts'
 import { Dialog, DialogContent, DialogHeader, DialogTitle, DialogTrigger } from "@/components/ui/dialog"
 import { Accordion, AccordionContent, AccordionItem, AccordionTrigger } from "@/components/ui/accordion"
-import { Book, Video, GamepadIcon, FileText, Search, MessageCircle, Users, Lightbulb, ChevronRight } from 'lucide-react'
+import { Video, GamepadIcon, FileText, Search, MessageCircle, Users, Lightbulb, ChevronRight } from 'lucide-react'
 import '/app/globals.css'
 
 const classData = {

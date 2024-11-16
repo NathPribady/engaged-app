@@ -236,20 +236,6 @@ export default function Dashboard() {
                     </Select>
                   </div>
                   <div className="grid gap-2">
-                    <Label htmlFor="method">Learning Method</Label>
-                    <Select value={learningMethod} onValueChange={setLearningMethod}>
-                      <SelectTrigger id="method">
-                        <SelectValue placeholder="Select a learning method" />
-                      </SelectTrigger>
-                      <SelectContent>
-                        <SelectItem value="visual">Visual</SelectItem>
-                        <SelectItem value="auditory">Auditory</SelectItem>
-                        <SelectItem value="kinesthetic">Kinesthetic</SelectItem>
-                        <SelectItem value="reading">Reading/Writing</SelectItem>
-                      </SelectContent>
-                    </Select>
-                  </div>
-                  <div className="grid gap-2">
                     <Label htmlFor="prompt">Custom Prompt (Optional)</Label>
                     <Textarea
                       id="prompt"

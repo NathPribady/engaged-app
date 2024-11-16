@@ -79,7 +79,6 @@ export default function Dashboard() {
   const [prompt, setPrompt] = useState('')
   const [subject, setSubject] = useState('')
   const [gradeLevel, setGradeLevel] = useState('')
-  const [learningMethod, setLearningMethod] = useState('')
   const [generatedMaterial, setGeneratedMaterial] = useState<any | null>(null) /* eslint-disable  @typescript-eslint/no-explicit-any */
   const [selectedAnswers, setSelectedAnswers] = useState<{ [key: string]: string }>({})
   const [quizProgress, setQuizProgress] = useState(0)
@@ -122,7 +121,7 @@ export default function Dashboard() {
   }
 
   const handleGenerateMaterial = () => {
-    if (!subject || !gradeLevel || !learningMethod) {
+    if (!subject || !gradeLevel) {
       toast({
         title: "Incomplete Information",
         description: "Please fill in all required fields before generating material.",

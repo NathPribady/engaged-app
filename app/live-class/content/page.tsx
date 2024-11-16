@@ -44,7 +44,6 @@ const engagementActivities = [
   },
 ]
 
-// Dummy data for engagement over time
 const dummyEngagementData = Array.from({ length: 24 }, (_, i) => ({
   time: i * 5,
   engaged: Math.floor(Math.random() * 100),
@@ -190,20 +189,20 @@ export default function LiveClassContent() {
           <CardHeader>
             <CardTitle>Engagement Over Time</CardTitle>
           </CardHeader>
-          <CardContent>
-            <ResponsiveContainer width="100%" height={200}>
-              <LineChart data={dummyEngagementData}>
-                <CartesianGrid strokeDasharray="3 3" />
-                <XAxis dataKey="time" label={{ value: 'Time (minutes)', position: 'insideBottom', offset: -5 }} />
-                <YAxis label={{ value: 'Engagement Level', angle: -90, position: 'insideLeft' }} />
-                <Tooltip />
-                <Legend />
-                <Line type="monotone" dataKey="high" stroke="#4CAF50" strokeWidth={2} />
-                <Line type="monotone" dataKey="medium" stroke="#FFC107" strokeWidth={2} />
-                <Line type="monotone" dataKey="low" stroke="#F44336" strokeWidth={2} />
-              </LineChart>
-            </ResponsiveContainer>
-          </CardContent>
+          <CardContent className="p-4">
+              <ResponsiveContainer width="100%" height={250}>
+                <LineChart data={dummyEngagementData}>
+                  <CartesianGrid strokeDasharray="3 3" />
+                  <XAxis dataKey="time" label={{ value: 'Time (minutes)', position: 'insideBottom', offset: -5 }} />
+                  <YAxis label={{ value: 'Engagement Level', angle: -90, position: 'insideLeft' }} />
+                  <Tooltip />
+                  <Legend />
+                  <Line type="monotone" dataKey="engaged" name="Engaged" stroke="#4CAF50" strokeWidth={2} />
+                  <Line type="monotone" dataKey="moderate" name="Moderate" stroke="#FFC107" strokeWidth={2} />
+                  <Line type="monotone" dataKey="bored" name="Bored" stroke="#F44336" strokeWidth={2} />
+                </LineChart>
+              </ResponsiveContainer>
+            </CardContent>
         </Card>
         <Card>
           <CardHeader>

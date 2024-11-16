@@ -39,6 +39,7 @@ import * as React from 'react'
 import { MoonIcon, SunIcon } from '@radix-ui/react-icons'
 import { useTheme } from 'next-themes'
 import { GalleryVerticalEnd, Search, LayoutDashboard, Video, ClipboardCheck } from 'lucide-react'
+import type { Metadata } from 'next'
 
 import { Button } from '@/components/ui/button'
 import {
@@ -55,6 +56,11 @@ import {
 } from '@/components/ui/sidebar'
 import { Input } from '@/components/ui/input'
 import { Separator } from '@/components/ui/separator'
+
+export const metadata: Metadata = {
+  title: 'Engaged!',
+  description: 'Your Teaching Assistant',
+}
 
 const navItems = [
   { name: 'Dashboard', href: '/', icon: LayoutDashboard },

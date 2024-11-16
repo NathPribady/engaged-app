@@ -80,10 +80,10 @@ export default function Dashboard() {
   const [subject, setSubject] = useState('')
   const [gradeLevel, setGradeLevel] = useState('')
   const [learningMethod, setLearningMethod] = useState('')
-  const [generatedMaterial, setGeneratedMaterial] = useState<any | null>(null)
+  const [generatedMaterial, setGeneratedMaterial] = useState<any | null>(null) /* eslint-disable  @typescript-eslint/no-explicit-any */
   const [selectedAnswers, setSelectedAnswers] = useState<{ [key: string]: string }>({})
   const [quizProgress, setQuizProgress] = useState(0)
-  const [analysisResults, setAnalysisResults] = useState<any | null>(null)
+  const [analysisResults, setAnalysisResults] = useState<any | null>(null) /* eslint-disable  @typescript-eslint/no-explicit-any */
 
   const handleFileUpload = (event: React.ChangeEvent<HTMLInputElement>) => {
     if (event.target.files && event.target.files.length > 0) {
@@ -309,7 +309,7 @@ export default function Dashboard() {
                         </AccordionTrigger>
                         <AccordionContent>
                           <ul className="list-disc pl-6 space-y-2">
-                            {analysisResults.resources.map((resource: any, index: number) => (
+                            {analysisResults.resources.map((resource: any, index: number) => ( /* eslint-disable  @typescript-eslint/no-explicit-any */
                               <li key={index}>
                                 {resource.name}
                                 {resource.url && (
@@ -387,7 +387,7 @@ export default function Dashboard() {
                   </CardHeader>
                   <CardContent>
                     <div className="grid gap-6">
-                      {generatedMaterial.sections.map((section: any, index: number) => (
+                      {generatedMaterial.sections.map((section: any, index: number) => ( /* eslint-disable  @typescript-eslint/no-explicit-any */
                         <Collapsible key={index}>
                           <CollapsibleTrigger asChild>
                             <Button variant="outline" className="w-full justify-between">
@@ -415,7 +415,7 @@ export default function Dashboard() {
                       <h3 className="text-lg font-semibold mb-4">Pop Quiz</h3>
                       <Progress value={quizProgress} className="mb-4" />
                       <div className="grid gap-4">
-                        {generatedMaterial.quiz.map((quizItem: any, index: number) => (
+                        {generatedMaterial.quiz.map((quizItem: any, index: number) => ( /* eslint-disable  @typescript-eslint/no-explicit-any */
                           <Card key={index}>
                             <CardHeader>
                               <CardTitle className="text-base flex items-center">

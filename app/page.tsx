@@ -43,25 +43,25 @@ export default function Dashboard() {
           title: "Addition",
           content: "Addition is the process of combining two or more numbers. We use the '+' symbol for addition.",
           example: "5 + 3 = 8",
-          image: "/placeholder.svg?height=200&width=200"
+          image: "https://as1.ftcdn.net/v2/jpg/01/20/65/24/1000_F_120652460_7uPT2p82zWUDTkdB1PFYfWNeawRg4jJ1.jpg"
         },
         {
           title: "Subtraction",
           content: "Subtraction is the process of taking one number away from another. We use the '-' symbol for subtraction.",
           example: "10 - 4 = 6",
-          image: "/placeholder.svg?height=200&width=200"
+          image: "https://www.shutterstock.com/shutterstock/photos/2020019123/display_1500/stock-vector-educational-math-children-game-subtraction-for-kids-math-worksheet-vector-illustration-2020019123.jpg"
         },
         {
           title: "Multiplication",
           content: "Multiplication is repeated addition. We use the '×' symbol for multiplication.",
           example: "3 × 4 = 12 (which is the same as 4 + 4 + 4)",
-          image: "/placeholder.svg?height=200&width=200"
+          image: "https://maths.olympiadsuccess.com/assets/images/maths_square_dictionary/tmss.jpg"
         },
         {
           title: "Division",
           content: "Division is the process of splitting a number into equal parts. We use the '÷' symbol for division.",
           example: "12 ÷ 3 = 4",
-          image: "/placeholder.svg?height=200&width=200"
+          image: "https://media.gcflearnfree.org/ctassets/topics/228/div_4_1_illustration_1.png"
         }
       ],
       quiz: [

@@ -94,22 +94,22 @@ export default function Dashboard() {
       // Simulating analysis results
       setAnalysisResults({
         improvements: [
-          "Add more visual aids to support key concepts",
-          "Expand on practical applications of the theory",
-          "Include more interactive elements to engage students",
-          "Simplify complex terminology for better understanding"
+          "Add more real-world examples to illustrate each law of motion",
+          "Include interactive simulations to demonstrate the laws in action",
+          "Expand on the historical context of Newton's discoveries",
+          "Provide more mathematical problems to reinforce understanding of F = ma"
         ],
         resources: [
-          { name: "Online Simulation Tool", url: "https://www.example-simulation.com" },
-          { name: "Advanced Concepts in Education", author: "J. Smith" },
-          { name: "Practical Applications in the Real World", platform: "EduTube" }
+          { name: "Interactive Physics Simulations", url: "https://phet.colorado.edu/en/simulations/filter?subjects=motion" },
+          { name: "The Principia: Mathematical Principles of Natural Philosophy", author: "Isaac Newton" },
+          { name: "Newton's Laws of Motion in Action", platform: "YouTube - Crash Course Physics" }
         ],
         quizSuggestions: [
-          "What is the main principle discussed in the material?",
-          "How does this concept apply to real-world scenarios?",
-          "What are the three key components of the theory presented?",
-          "Explain the relationship between X and Y as described in the material.",
-          "What potential challenges might arise when implementing this approach?"
+          "Explain how Newton's First Law of Motion applies to a car coming to a stop at a red light.",
+          "Calculate the force required to accelerate a 1000 kg car from 0 to 100 km/h in 10 seconds.",
+          "Describe an example of Newton's Third Law of Motion in everyday life.",
+          "How does mass affect the acceleration of an object when a constant force is applied?",
+          "Explain why a rocket can propel itself in the vacuum of space using Newton's Third Law."
         ],
         stats: {
           readability: 85,
@@ -131,53 +131,47 @@ export default function Dashboard() {
     }
 
     const exampleLesson = {
-      title: "Introduction to Basic Arithmetic",
+      title: "Newton's Laws of Motion",
       sections: [
         {
-          title: "Addition",
-          content: "Addition is the process of combining two or more numbers. We use the '+' symbol for addition.",
-          example: "5 + 3 = 8",
-          image: "https://as1.ftcdn.net/v2/jpg/01/20/65/24/1000_F_120652460_7uPT2p82zWUDTkdB1PFYfWNeawRg4jJ1.jpg"
+          title: "First Law of Motion",
+          content: "An object at rest stays at rest and an object in motion stays in motion with the same speed and in the same direction unless acted upon by an unbalanced force.",
+          example: "A book sitting on a table remains at rest until a force (like a push) acts on it.",
+          image: "https://cdn.britannica.com/66/157966-050-C4AE9F7F/Newtons-first-law-motion.jpg"
         },
         {
-          title: "Subtraction",
-          content: "Subtraction is the process of taking one number away from another. We use the '-' symbol for subtraction.",
-          example: "10 - 4 = 6",
-          image: "https://www.shutterstock.com/shutterstock/photos/2020019123/display_1500/stock-vector-educational-math-children-game-subtraction-for-kids-math-worksheet-vector-illustration-2020019123.jpg"
+          title: "Second Law of Motion",
+          content: "The acceleration of an object as produced by a net force is directly proportional to the magnitude of the net force, in the same direction as the net force, and inversely proportional to the mass of the object.",
+          example: "F = ma (Force equals mass times acceleration)",
+          image: "https://cdn.britannica.com/66/157966-050-9E7A0D0C/Newtons-second-law-motion.jpg"
         },
         {
-          title: "Multiplication",
-          content: "Multiplication is repeated addition. We use the '×' symbol for multiplication.",
-          example: "3 × 4 = 12 (which is the same as 4 + 4 + 4)",
-          image: "https://maths.olympiadsuccess.com/assets/images/maths_square_dictionary/tmss.jpg"
-        },
-        {
-          title: "Division",
-          content: "Division is the process of splitting a number into equal parts. We use the '÷' symbol for division.",
-          example: "12 ÷ 3 = 4",
-          image: "https://media.gcflearnfree.org/ctassets/topics/228/div_4_1_illustration_1.png"
+          title: "Third Law of Motion",
+          content: "For every action, there is an equal and opposite reaction.",
+          example: "When a bird flies, it pushes air downwards (action) and the air pushes the bird upwards (reaction).",
+          image: "https://cdn.britannica.com/66/157966-050-B3C2B9E6/Newtons-third-law-motion.jpg"
         }
       ],
       quiz: [
         {
-          question: "What is 7 + 8?",
-          options: ["13", "14", "15", "16"],
-          correctAnswer: "15"
+          question: "What happens to an object in motion according to Newton's First Law?",
+          options: ["It always slows down", "It stays in motion with the same speed and direction", "It accelerates", "It changes direction"],
+          correctAnswer: "It stays in motion with the same speed and direction"
         },
         {
-          question: "If you have 15 apples and give away 6, how many do you have left?",
-          options: ["7", "8", "9", "10"],
-          correctAnswer: "9"
+          question: "What does F = ma represent in Newton's Second Law?",
+          options: ["Force equals mass times area", "Force equals momentum times acceleration", "Force equals mass times acceleration", "Force equals motion times action"],
+          correctAnswer: "Force equals mass times acceleration"
         },
         {
-          question: "What is 5 × 6?",
-          options: ["25", "30", "35", "40"],
-          correctAnswer: "30"
+          question: "What is the relationship between action and reaction in Newton's Third Law?",
+          options: ["Action is greater than reaction", "Reaction is greater than action", "Action and reaction are equal and opposite", "Action and reaction are independent"],
+          correctAnswer: "Action and reaction are equal and opposite"
         },
         {
-          question: "If you have 20 candies and want to share them equally among 4 friends, how many candies will each friend get?",
-          options: ["3", "4", "5", "6"],
-          correctAnswer: "5"
+          question: "Which law of motion explains why a rocket can propel itself in space?",
+          options: ["First Law", "Second Law", "Third Law", "Fourth Law"],
+          correctAnswer: "Third Law"
         }
       ]
     }

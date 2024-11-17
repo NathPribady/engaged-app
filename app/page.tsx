@@ -137,19 +137,19 @@ export default function Dashboard() {
           title: "First Law of Motion",
           content: "An object at rest stays at rest and an object in motion stays in motion with the same speed and in the same direction unless acted upon by an unbalanced force.",
           example: "A book sitting on a table remains at rest until a force (like a push) acts on it.",
-          image: "https://cdn.britannica.com/66/157966-050-C4AE9F7F/Newtons-first-law-motion.jpg"
+          image: "https://media.geeksforgeeks.org/wp-content/uploads/20210307125042/Firstlawofmotion.PNG"
         },
         {
           title: "Second Law of Motion",
           content: "The acceleration of an object as produced by a net force is directly proportional to the magnitude of the net force, in the same direction as the net force, and inversely proportional to the mass of the object.",
           example: "F = ma (Force equals mass times acceleration)",
-          image: "https://cdn.britannica.com/66/157966-050-9E7A0D0C/Newtons-second-law-motion.jpg"
+          image: "https://media.geeksforgeeks.org/wp-content/uploads/20240804223932/Newtons-second-Law-of-Motion.webp"
         },
         {
           title: "Third Law of Motion",
           content: "For every action, there is an equal and opposite reaction.",
           example: "When a bird flies, it pushes air downwards (action) and the air pushes the bird upwards (reaction).",
-          image: "https://cdn.britannica.com/66/157966-050-B3C2B9E6/Newtons-third-law-motion.jpg"
+          image: "https://media.geeksforgeeks.org/wp-content/uploads/20230314153559/Reaction-of-Alcohols-First-law-of-motion-and-Latent-heat-(Feedback).png"
         }
       ],
       quiz: [

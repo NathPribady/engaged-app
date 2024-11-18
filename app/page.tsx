@@ -1,7 +1,7 @@
 'use client'
 
 import { useState } from 'react'
-import { Upload, ChevronRight, Lightbulb, BookOpen, PenTool, BarChart, Zap, Clock } from 'lucide-react'
+import { Upload, ChevronRight, Lightbulb, BookOpen, PenTool, BarChart, Zap, Clock, FileUp } from 'lucide-react'
 import { motion, AnimatePresence } from 'framer-motion'
 import { Button } from "@/components/ui/button"
 import { Card, CardContent, CardDescription, CardHeader, CardTitle, CardFooter } from "@/components/ui/card"
@@ -14,6 +14,7 @@ import { Progress } from "@/components/ui/progress"
 import { toast } from "@/hooks/use-toast"
 import { Accordion, AccordionContent, AccordionItem, AccordionTrigger } from "@/components/ui/accordion"
 import Link from 'next/link'
+import { useRouter } from 'next/navigation'
 import '/app/globals.css';
 
 const upcomingClasses = [
@@ -83,6 +84,7 @@ export default function Dashboard() {
   const [selectedAnswers, setSelectedAnswers] = useState<{ [key: string]: string }>({})
   const [quizProgress, setQuizProgress] = useState(0)
   const [analysisResults, setAnalysisResults] = useState<any | null>(null) /* eslint-disable  @typescript-eslint/no-explicit-any */
+  const router = useRouter();
 
   const handleFileUpload = (event: React.ChangeEvent<HTMLInputElement>) => {
     if (event.target.files && event.target.files.length > 0) {
@@ -117,6 +119,25 @@ export default function Dashboard() {
           comprehensiveness: 90
         }
       })
+    }
+  }
+
+  const handleFileUpload2 = (event: React.ChangeEvent<HTMLInputElement>) => {
+    if (event.target.files && event.target.files.length > 0) {
+      const file = event.target.files[0]
+      const formData = new FormData()
+      formData.append('file', file)
+      
+      // Simulate file upload and redirection
+      toast({
+        title: "File Uploaded Successfully",
+        description: `${file.name} has been uploaded. Redirecting to lesson creation...`,
+      })
+      
+      // Redirect to the interactive lesson creation page
+      setTimeout(() => {
+        router.push('/interactive-lesson/create')
+      }, 500)
     }
   }
 
@@ -351,6 +372,28 @@ export default function Dashboard() {
               </CardContent>
             </Card>
           </div>
+
+          <Card>
+              <CardHeader>
+                <CardTitle>Create Interactive Lesson</CardTitle>
+                <CardDescription>Transform your PDF material into an engaging pre-class activity</CardDescription>
+              </CardHeader>
+              <CardContent>
+                <div className="flex items-center justify-center w-full mb-6">
+                  <label htmlFor="dropzone-file" className="flex flex-col items-center justify-center w-full h-64 border-2 border-dashed rounded-lg cursor-pointer bg-gray-50 dark:hover:bg-bray-800 dark:bg-gray-700 hover:bg-gray-100 dark:border-gray-600 dark:hover:border-gray-500 dark:hover:bg-gray-600 transition-colors duration-300">
+                    <div className="flex flex-col items-center justify-center pt-5 pb-6">
+                      <FileUp className="w-10 h-10 mb-3 text-gray-400" />
+                      <p className="mb-2 text-sm text-gray-500 dark:text-gray-400"><span className="font-semibold">Click to upload</span> or drag and drop</p>
+                      <p className="text-xs text-gray-500 dark:text-gray-400">PDF (MAX. 10MB)</p>
+                    </div>
+                    <input id="dropzone-file" type="file" accept=".pdf" className="hidden" onChange={handleFileUpload2} />
+                  </label>
+                </div>
+                <p className="text-sm text-gray-500 text-center">
+                  Upload your PDF material to create an interactive lesson. You'll be redirected to the lesson creation page after upload.
+                </p>
+              </CardContent>
+            </Card>
 
           <AnimatePresence>
             {activeSection === 'create' && generatedMaterial && (

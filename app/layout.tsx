@@ -38,7 +38,7 @@
 import * as React from 'react'
 import { MoonIcon, SunIcon } from '@radix-ui/react-icons'
 import { useTheme } from 'next-themes'
-import { GalleryVerticalEnd, Search, LayoutDashboard, Video, ClipboardCheck } from 'lucide-react'
+import { GalleryVerticalEnd, Search, LayoutDashboard, Video, ClipboardCheck, Book } from 'lucide-react'
 
 import { Button } from '@/components/ui/button'
 import {
@@ -60,6 +60,7 @@ const navItems = [
   { name: 'Dashboard', href: '/', icon: LayoutDashboard },
   { name: 'Live Class', href: '/live-class', icon: Video },
   { name: 'Evaluation', href: '/evaluation', icon: ClipboardCheck },
+  { name: 'Interactive Lesson', href: '/interactive-lesson', icon: Book}
 ]
 
 function AppSidebar() {

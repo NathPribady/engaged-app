@@ -138,7 +138,7 @@ export default function CreateInteractiveLesson() {
     <div className="container mx-auto p-4 space-y-8">
       <header className="mb-8">
         <h1 className="text-3xl font-bold">Create Interactive Lesson</h1>
-        <p className="text-gray-600">Edit and enhance the pre-generated lesson on Newton's Laws of Motion</p>
+        <p className="text-gray-600">Edit and enhance the pre-generated lesson on Newton Laws of Motion</p>
       </header>
 
       <div className="grid md:grid-cols-2 gap-8">

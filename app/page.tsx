@@ -390,7 +390,7 @@ export default function Dashboard() {
                   </label>
                 </div>
                 <p className="text-sm text-gray-500 text-center">
-                  Upload your PDF material to create an interactive lesson. You'll be redirected to the lesson creation page after upload.
+                  Upload your PDF material to create an interactive lesson. You will be redirected to the lesson creation page after upload.
                 </p>
               </CardContent>
             </Card>

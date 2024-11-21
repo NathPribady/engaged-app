@@ -62,7 +62,7 @@ const evaluations = [
   {
     name: "World History",
     week: 4,
-    time: "Mon, Wed, Fri 1:00 PM - 2:00 PM",
+    time: "Mon, Wed, Fri 1:00 PM - 3:00 PM",
     description: "Major events and developments in global history",
     score: 78,
   },

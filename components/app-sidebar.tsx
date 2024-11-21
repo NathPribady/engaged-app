@@ -31,11 +31,11 @@ const navItems = [
     showArrow: true,
     subItems: [
       { name: 'Generate Material', href: '/preparation/generate-material', icon: FileText },
-      { name: 'Generate Lesson Plan', href: '/generate-lesson-plan', icon: PenTool },
-      { name: 'Slides Reviewer', href: '/slides-reviewer', icon: Layout },
-      { name: 'Interactive Lesson', href: '/interactive-lesson', icon: BookOpen },
-      { name: 'Question Generator', href: '/question-generator', icon: HelpCircle },
-      { name: 'Socratic Dialogues', href: '/discussion-prompt', icon: MessageSquare },
+      { name: 'Generate Lesson Plan', href: '/preparation/lesson-plan', icon: PenTool },
+      { name: 'Slides Reviewer', href: '/preparation/slides-reviewer', icon: Layout },
+      { name: 'Interactive Lesson', href: '/preparation/interactive-lesson', icon: BookOpen },
+      { name: 'Question Generator', href: '/preparation/question-generator', icon: HelpCircle },
+      { name: 'Socratic Dialogues', href: '/preparation/discussion-prompt', icon: MessageSquare },
     ]
   },
   { name: 'Live Class', href: '/live-class', icon: Video },

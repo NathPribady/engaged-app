@@ -12,7 +12,7 @@ import { Textarea } from "@/components/ui/textarea"
 
 export default function GenerateMaterial() {
   const router = useRouter()
-  const [formData, setFormData] = useState({
+  const [, setFormData] = useState({
     gradeLevel: '',
     subject: '',
     topic: '',

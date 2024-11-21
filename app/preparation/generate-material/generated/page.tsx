@@ -8,7 +8,7 @@ import {
   CardHeader,
   CardTitle,
 } from "@/components/ui/card"
-import { Book, BookOpen, Brain, FileQuestion, Lightbulb, Presentation } from 'lucide-react'
+import { Book, Brain, FileQuestion, Lightbulb, Presentation } from 'lucide-react'
 
 export default function GeneratedMaterial() {
   return (

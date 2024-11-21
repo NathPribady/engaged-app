@@ -21,6 +21,7 @@ import {
   CollapsibleContent,
   CollapsibleTrigger,
 } from "@/components/ui/collapsible"
+import '/app/globals.css'
 
 const navItems = [
   { name: 'Dashboard', href: '/', icon: LayoutDashboard },
@@ -29,7 +30,7 @@ const navItems = [
     icon: BookOpen,
     showArrow: true,
     subItems: [
-      { name: 'Generate Material', href: '/generate-material', icon: FileText },
+      { name: 'Generate Material', href: '/preparation/generate-material', icon: FileText },
       { name: 'Generate Lesson Plan', href: '/generate-lesson-plan', icon: PenTool },
       { name: 'Slides Reviewer', href: '/slides-reviewer', icon: Layout },
       { name: 'Interactive Lesson', href: '/interactive-lesson', icon: BookOpen },

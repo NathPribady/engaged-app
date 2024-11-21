@@ -9,7 +9,7 @@ import '/app/globals.css'
 
 export default function Dashboard() {
   const preparationCards = [
-    { title: "Create New Material", description: "Customize and generate educational content with real-world contextualization", link: "/create-material", icon: <FileText />, color: "bg-red-100" },
+    { title: "Create New Material", description: "Customize and generate educational content with real-world contextualization", link: "/preparation/generate-material/create", icon: <FileText />, color: "bg-red-100" },
     { title: "Create Lesson Plan", description: "Develop structured lesson plans, based on scientific and constructivist method", link: "/create-lesson-plan", icon: <PenTool />, color: "bg-green-100" },
     { title: "Review My Slides", description: "Upload and review your presentation slides, we provide data-driven insightful feedback", link: "/review-slides", icon: <Layout />, color: "bg-blue-100" },
     { title: "Interactive Lesson", description: "Transform pre-reading materials into interactive lessons", link: "/interactive-lesson", icon: <BookOpen />, color: "bg-purple-100" },

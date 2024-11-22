@@ -3,7 +3,6 @@ import { Button } from "@/components/ui/button"
 import {
   Card,
   CardContent,
-  CardDescription,
   CardFooter,
   CardHeader,
   CardTitle,
@@ -18,7 +17,7 @@ export default function ActivitiesGenerator() {
     <div className="container mx-auto py-6 space-y-6">
       <div className="flex justify-between items-start">
         <div>
-          <h1 className="text-3xl font-bold">Activities Generator: Newton's Laws of Motion</h1>
+          <h1 className="text-3xl font-bold">Activities Generator: Newton Laws of Motion</h1>
           <p className="text-xl text-muted-foreground">Based on your uploaded slides</p>
         </div>
         <Activity className="w-16 h-16 text-blue-500" />
@@ -32,7 +31,7 @@ export default function ActivitiesGenerator() {
           <ul className="grid grid-cols-1 md:grid-cols-2 gap-2">
             <li className="flex items-start space-x-2">
               <Book className="w-5 h-5 text-blue-500 mt-0.5" />
-              <span>Topic: Newton's Three Laws of Motion</span>
+              <span>Topic: Newton Three Laws of Motion</span>
             </li>
             <li className="flex items-start space-x-2">
               <Target className="w-5 h-5 text-green-500 mt-0.5" />
@@ -68,7 +67,7 @@ export default function ActivitiesGenerator() {
               </AccordionTrigger>
               <AccordionContent>
                 <div className="space-y-2">
-                  <p><strong>Objective:</strong> Demonstrate Newton's First Law of Motion</p>
+                  <p><strong>Objective:</strong> Demonstrate Newton First Law of Motion</p>
                   <p><strong>Materials:</strong> Smooth table or desk, small objects (coins, cards), paper</p>
                   <p><strong>Procedure:</strong></p>
                   <ol className="list-decimal list-inside space-y-1 text-sm pl-6">
@@ -112,14 +111,14 @@ export default function ActivitiesGenerator() {
               </AccordionTrigger>
               <AccordionContent>
                 <div className="space-y-2">
-                  <p><strong>Objective:</strong> Illustrate Newton's Third Law of Motion</p>
+                  <p><strong>Objective:</strong> Illustrate Newton Third Law of Motion</p>
                   <p><strong>Materials:</strong> Balloons, string, straws, tape</p>
                   <p><strong>Procedure:</strong></p>
                   <ol className="list-decimal list-inside space-y-1 text-sm pl-6">
                     <li>Thread a string through a straw and tie it between two points.</li>
                     <li>Inflate a balloon and clip it closed without tying.</li>
                     <li>Tape the balloon to the straw on the string.</li>
-                    <li>Release the clip and observe the balloon's movement.</li>
+                    <li>Release the clip and observe the balloon movement.</li>
                   </ol>
                   <p><strong>Discussion:</strong> Explain how this demonstrates action-reaction pairs.</p>
                 </div>
@@ -142,10 +141,10 @@ export default function ActivitiesGenerator() {
             </CardHeader>
             <CardContent>
               <ul className="list-disc list-inside space-y-1 text-sm">
-                <li>Start with a brief video showing real-world applications of Newton's Laws</li>
+                <li>Start with a brief video showing real-world applications of Newton Laws</li>
                 <li>Use digital simulations to visualize forces and motion</li>
-                <li>Incorporate a "Physics in Sports" discussion to relate concepts to students' interests</li>
-                <li>Create a "Newton's Laws Scavenger Hunt" around the school or classroom</li>
+                <li>Incorporate a Physics in Sports discussion to relate concepts to students interests</li>
+                <li>Create a Newton Laws Scavenger Hunt around the school or classroom</li>
                 <li>Encourage students to create and share social media-style posts explaining each law</li>
               </ul>
             </CardContent>
@@ -158,7 +157,7 @@ export default function ActivitiesGenerator() {
             </CardHeader>
             <CardContent>
               <ul className="list-disc list-inside space-y-1 text-sm">
-                <li>Concept mapping: Students create visual representations of Newton's Laws</li>
+                <li>Concept mapping: Students create visual representations of Newton Laws</li>
                 <li>Lab report: Detailed write-up of one of the hands-on activities</li>
                 <li>Video project: Students record and explain real-life examples of each law</li>
                 <li>Problem-solving quiz: Apply laws to calculate force, mass, or acceleration</li>
@@ -197,7 +196,7 @@ export default function ActivitiesGenerator() {
           <ul className="space-y-2">
             <li className="flex items-center space-x-2">
               <Users className="w-5 h-5 text-green-500" />
-              <span>Explain each of Newton's Three Laws of Motion in their own words</span>
+              <span>Explain each of Newton Three Laws of Motion in their own words</span>
             </li>
             <li className="flex items-center space-x-2">
               <Users className="w-5 h-5 text-green-500" />
@@ -209,11 +208,11 @@ export default function ActivitiesGenerator() {
             </li>
             <li className="flex items-center space-x-2">
               <Users className="w-5 h-5 text-green-500" />
-              <span>Design simple experiments to demonstrate Newton's Laws</span>
+              <span>Design simple experiments to demonstrate Newton Laws</span>
             </li>
             <li className="flex items-center space-x-2">
               <Users className="w-5 h-5 text-green-500" />
-              <span>Apply Newton's Laws to solve basic physics problems</span>
+              <span>Apply Newton Laws to solve basic physics problems</span>
             </li>
           </ul>
         </CardContent>

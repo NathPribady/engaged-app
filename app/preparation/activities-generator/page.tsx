@@ -1,6 +1,6 @@
 import Link from 'next/link'
 import { Button } from "@/components/ui/button"
-import { Puzzle, Microscope, Globe, Calculator, Beaker, PenTool, Users, Clock } from 'lucide-react'
+import { Puzzle, Microscope, Globe, Calculator, PenTool, Users, Clock } from 'lucide-react'
 
 const activities = [
   {

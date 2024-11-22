@@ -118,7 +118,7 @@ export default function ActivitiesGenerator() {
                     <li>Thread a string through a straw and tie it between two points.</li>
                     <li>Inflate a balloon and clip it closed without tying.</li>
                     <li>Tape the balloon to the straw on the string.</li>
-                    <li>Release the clip and observe the balloon's movement.</li>
+                    <li>Release the clip and observe the balloon movement.</li>
                   </ol>
                   <p><strong>Discussion:</strong> Explain how this demonstrates action-reaction pairs.</p>
                 </div>
@@ -143,8 +143,8 @@ export default function ActivitiesGenerator() {
               <ul className="list-disc list-inside space-y-1 text-sm">
                 <li>Start with a brief video showing real-world applications of Newton Laws</li>
                 <li>Use digital simulations to visualize forces and motion</li>
-                <li>Incorporate a "Physics in Sports" discussion to relate concepts to students' interests</li>
-                <li>Create a "Newton Laws Scavenger Hunt" around the school or classroom</li>
+                <li>Incorporate a Physics in Sports discussion to relate concepts to students interests</li>
+                <li>Create a Newton Laws Scavenger Hunt around the school or classroom</li>
                 <li>Encourage students to create and share social media-style posts explaining each law</li>
               </ul>
             </CardContent>

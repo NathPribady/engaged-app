@@ -34,8 +34,8 @@ const navItems = [
       { name: 'Generate Lesson Plan', href: '/preparation/lesson-plan', icon: PenTool },
       { name: 'Slides Reviewer', href: '/preparation/review-slides', icon: Layout },
       { name: 'Interactive Lesson', href: '/preparation/interactive-lesson', icon: BookOpen },
-      { name: 'Question Generator', href: '/preparation/question-generator', icon: HelpCircle },
-      { name: 'Socratic Dialogues', href: '/preparation/discussion-prompt', icon: MessageSquare },
+      { name: 'Socratic Dialogues', href: '/preparation/socratic-dialoque', icon: MessageSquare },
+      { name: 'Activities Generator', href: '/preparation/activities-generator', icon: HelpCircle },
     ]
   },
   { name: 'Live Class', href: '/live-class', icon: Video },

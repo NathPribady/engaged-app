@@ -11,8 +11,8 @@ export default function Dashboard() {
   const preparationCards = [
     { title: "Create New Material", description: "Customize and generate educational content with real-world contextualization", link: "/preparation/generate-material/create", icon: <FileText />, color: "bg-red-100" },
     { title: "Create Lesson Plan", description: "Develop structured lesson plans, based on scientific and constructivist method", link: "/preparation/lesson-plan/create", icon: <PenTool />, color: "bg-green-100" },
-    { title: "Review My Slides", description: "Upload and review your presentation slides, we provide data-driven insightful feedback", link: "/preparation/revire-slides/create", icon: <Layout />, color: "bg-blue-100" },
     { title: "Interactive Lesson", description: "Transform pre-reading materials into interactive lessons", link: "/interactive-lesson", icon: <BookOpen />, color: "bg-purple-100" },
+    { title: "Review My Slides", description: "Upload and review your presentation slides, we provide data-driven insightful feedback", link: "/preparation/revire-slides/create", icon: <Layout />, color: "bg-blue-100" },
     { title: "Question Generator", description: "Create engaging questions for assessments and discussions", link: "/question-generator", icon: <HelpCircle />, color: "bg-yellow-100" },
     { title: "Socratic Dialogue", description: "Generate thought-provoking prompts for class discussions", link: "/discussion-prompt", icon: <MessageSquare />, color: "bg-indigo-100" },
   ]

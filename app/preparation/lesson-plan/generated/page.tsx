@@ -10,14 +10,14 @@ import {
 import { Badge } from "@/components/ui/badge"
 import { Tabs, TabsContent, TabsList, TabsTrigger } from "@/components/ui/tabs"
 import { Accordion, AccordionContent, AccordionItem, AccordionTrigger } from "@/components/ui/accordion"
-import { BookOpen, Clock, Lightbulb, PenTool, Users, Beaker, FileText, Leaf } from 'lucide-react'
+import { BookOpen, Clock, Lightbulb, PenTool, Users, Beaker, FileText } from 'lucide-react'
 
 export default function GeneratedLessonPlan() {
   return (
     <div className="container mx-auto py-6 space-y-6">
       <div className="flex justify-between items-start">
         <div>
-          <h1 className="text-3xl font-bold">Exploring Photosynthesis: Nature's Energy Factory</h1>
+          <h1 className="text-3xl font-bold">Exploring Photosynthesis: Nature Energy Factory</h1>
           <p className="text-xl text-muted-foreground">Grade Level: 7th Grade Science</p>
         </div>
       </div>
@@ -84,9 +84,9 @@ export default function GeneratedLessonPlan() {
               </AccordionTrigger>
               <AccordionContent>
                 <ul className="list-disc list-inside space-y-1 text-sm pl-6">
-                  <li>Introduce "photosynthesis" and its etymology</li>
+                  <li>Introduce photosynthesis and its etymology</li>
                   <li>Present equation: 6CO2 + 6H2O + light → C6H12O6 + 6O2</li>
-                  <li>Explain each component's role</li>
+                  <li>Explain each component role</li>
                   <li>Use leaf diagram, highlight chloroplasts and chlorophyll</li>
                   <li>Discuss importance for life (O2 production, food chain)</li>
                 </ul>

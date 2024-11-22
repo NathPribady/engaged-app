@@ -40,7 +40,7 @@ const navItems = [
   },
   { name: 'Live Class', href: '/live-class', icon: Video },
   { name: 'Evaluation', href: '/evaluation', icon: ClipboardCheck },
-  { name: 'Teacher Encyclopedia', href: 'encyclopedia', icon: Book}
+  { name: 'Teacher Encyclopedia', href: '/teacher-encyclopedia', icon: Book}
 ]
 
 export function AppSidebar() {

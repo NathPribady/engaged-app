@@ -13,8 +13,8 @@ export default function Dashboard() {
     { title: "Create Lesson Plan", description: "Develop structured lesson plans, based on scientific and constructivist method", link: "/preparation/lesson-plan", icon: <PenTool />, color: "bg-green-100" },
     { title: "Interactive Lesson", description: "Transform pre-reading materials into interactive lessons", link: "/interactive-lesson", icon: <BookOpen />, color: "bg-purple-100" },
     { title: "Review My Slides", description: "Upload and review your presentation slides, we provide data-driven insightful feedback", link: "/preparation/review-slides", icon: <Layout />, color: "bg-blue-100" },
-    { title: "Question Generator", description: "Create engaging questions for assessments and discussions", link: "/question-generator", icon: <HelpCircle />, color: "bg-yellow-100" },
-    { title: "Socratic Dialogue", description: "Generate thought-provoking prompts for class discussions", link: "/discussion-prompt", icon: <MessageSquare />, color: "bg-indigo-100" },
+    { title: "Socratic Dialogue", description: "Prepare for hard questions from student and test your knowledge using Socratic method!", link: "/preparation/socratic-dialogue", icon: <MessageSquare />, color: "bg-indigo-100" },
+    { title: "Activities Generator", description: "Create engaging activites for assessments and discussions", link: "/question-generator", icon: <HelpCircle />, color: "bg-yellow-100" },
   ]
 
   const upcomingClasses = [

@@ -100,7 +100,7 @@ export default function ReviewMySlides() {
               <AccordionContent>
                 <ul className="list-disc list-inside space-y-1 text-sm pl-6">
                   <li>Strong visual representation of food web concepts</li>
-                  <li>Slide 10's interactive food web builder is excellent</li>
+                  <li>Slide 10 interactive food web builder is excellent</li>
                   <li>Consider adding a slide for students to create their own food webs</li>
                   <li>Suggestion: Include a real-world problem for students to solve using food web knowledge</li>
                 </ul>

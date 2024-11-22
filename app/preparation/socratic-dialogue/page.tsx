@@ -5,7 +5,7 @@ import { Button } from "@/components/ui/button"
 import { Input } from "@/components/ui/input"
 import { ScrollArea } from "@/components/ui/scroll-area"
 import { Avatar, AvatarFallback } from "@/components/ui/avatar"
-import { Clock, Computer, ArrowBigDown } from 'lucide-react'
+import { Clock, Computer } from 'lucide-react'
 import Link from 'next/link'
 
 // Define types
@@ -15,12 +15,6 @@ interface Message {
   role: MessageRole
   content: string
   timestamp: number
-}
-
-interface Conversation {
-  id: number
-  topic: string
-  date: string
 }
 
 // Dummy data for past conversations

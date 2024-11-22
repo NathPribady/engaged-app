@@ -43,7 +43,7 @@ export default function LessonPlansList() {
     <div className="container mx-auto py-12 px-4">
       <div className="flex justify-between items-center mb-8">
         <h1 className="text-4xl font-bold">Generated Lesson Plans</h1>
-        <Link href="/generate-lesson-plan">
+        <Link href="/preparation/lesson-plan/generated">
           <Button>Generate New Lesson Plan</Button>
         </Link>
       </div>

@@ -32,7 +32,7 @@ const navItems = [
     subItems: [
       { name: 'Generate Material', href: '/preparation/generate-material', icon: FileText },
       { name: 'Generate Lesson Plan', href: '/preparation/lesson-plan', icon: PenTool },
-      { name: 'Slides Reviewer', href: '/preparation/slides-reviewer', icon: Layout },
+      { name: 'Slides Reviewer', href: '/preparation/review-slides', icon: Layout },
       { name: 'Interactive Lesson', href: '/preparation/interactive-lesson', icon: BookOpen },
       { name: 'Question Generator', href: '/preparation/question-generator', icon: HelpCircle },
       { name: 'Socratic Dialogues', href: '/preparation/discussion-prompt', icon: MessageSquare },

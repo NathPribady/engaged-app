@@ -17,7 +17,7 @@ export default function ActivitiesGenerator() {
     <div className="container mx-auto py-6 space-y-6">
       <div className="flex justify-between items-start">
         <div>
-          <h1 className="text-3xl font-bold">Activities Generator: Newton Laws of Motion</h1>
+          <h1 className="text-3xl font-bold">Activities Generator: Newton Laws of Motion Hahahihi</h1>
           <p className="text-xl text-muted-foreground">Based on your uploaded slides</p>
         </div>
         <Activity className="w-16 h-16 text-blue-500" />
